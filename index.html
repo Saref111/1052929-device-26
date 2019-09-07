@@ -6,39 +6,35 @@
   </head>
   <body>
 
-   <header class="main">
+   <header class="index-header">
      <div class="logo-wrap"><a class="logo"><img src="#" alt="Device"></a></div>
      <form action="http://echo.htmlacademy.ru" method="post"><input type="text" name="search-area" id="search" placeholder="Поиск по сайту"></form>
+     <nav class="index-nav">
      <ul class="user-nav">
-       <li><a class="user-nav-item" href="#">Войти</a></li>
+       <li class="user-nav-item"><a href="#">Войти</a></li>
        <li class="visually-hidden user-nav-item"><a href="#">Валентин Петухов</a></li>
        <li class="visually-hidden user-nav-item"><a href="#">Выйти</a></li>
-       <li><a class="user-nav-item" href="#">Сравнить</a></li>
-       <li><a class="user-nav-item" href="#">Корзина</a></li>
+       <li class="user-nav-item"><a href="#">Сравнить</a></li>
+       <li class="user-nav-item"><a href="#">Корзина</a></li>
+       <li>
+        <a class="catalog-link">Каталог товаров</a>
+        <ul class="catalog-menu">
+          <li><a href="#" class="catalog-menu-item">Виртуальная реальность</a></li>
+          <li><a href="#" class="catalog-menu-item">Моноподы для селфи</a></li>
+          <li><a href="#" class="catalog-menu-item">Экшн-камеры</a></li>
+          <li><a href="#" class="catalog-menu-item">Фитнес-браслеты</a></li>
+          <li><a href="#" class="catalog-menu-item">Умные часы</a></li>
+          <li><a href="#" class="catalog-menu-item">Квадрокоптеры</a></li>
+        </ul>
+       </li>
+       <li><a href="#" class="onpage-menu-item">Доствака</a></li>
+       <li><a href="#" class="onpage-menu-item">Гарантия</a></li>
+       <li><a href="#" class="onpage-menu-item">Контакты</a></li>
      </ul>
-     <nav class="index-nav">
-      <a class="catalog-link">Каталог товаров</a>
-      <ul class="catalog-menu">
-        <li>
-          <ul class="catalog-menu-sub">
-            <li><a href="#" class="catalog-menu-sub-item">Виртуальная реальность</a></li>
-            <li><a href="#" class="catalog-menu-sub-item">Моноподы для селфи</a></li>
-            <li><a href="#" class="catalog-menu-sub-item">Экшн-камеры</a></li>
-            <li><a href="#" class="catalog-menu-sub-item">Фитнес-браслеты</a></li>
-            <li><a href="#" class="catalog-menu-sub-item">Умные часы</a></li>
-            <li><a href="#" class="catalog-menu-sub-item">Квадрокоптеры</a></li>
-          </ul>
-        
-      </ul>
-      <ul class="onpage-menu">
-        <li><a href="#" class="onpage-menu-item">Доствака</a></li>
-        <li><a href="#" class="onpage-menu-item">Гарантия</a></li>
-        <li><a href="#" class="onpage-menu-item">Контакты</a></li>
-      </ul>
     </nav>
    </header>
 
-   <main>
+   <main class="index-main">
      <h1 class="visually-hidden">Device</h1>
      <section class="slider-top">
        <h2 class="visually-hidden">ТОП-3 товара</h2>
@@ -50,7 +46,7 @@
          <label for="slider-top-checkbox-2"></label>
          <label for="slider-top-checkbox-3"></label>
        </div>
-       <div class="slide slide-1">
+       <div class="slide">
          <h3 class="visually-hidden">Селфи-палка</h3>
          <img src="#" alt="Селфи-палка">
          <span class="number">01</span>
@@ -72,7 +68,7 @@
            </li>
          </ul>
         </div>
-       <div class="slide slide-2">
+       <div class="slide">
          <h3 class="visually-hidden">Фитнес-браслет</h3>
          <img src="#" alt="Фитнес-браслет">
          <span class="number">02</span>
@@ -87,7 +83,7 @@
            </li>
          </ul>
        </div>
-       <div class="slide slide-3">
+       <div class="slide">
          <h3 class="visually-hidden">Квадрокоптер</h3>
          <img src="#" alt="Квадрокоптер">
          <span class="number">03</span>
