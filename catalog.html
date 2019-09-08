@@ -51,7 +51,7 @@
     <section class="filters">
       <h2 class="filters-heading">Фильтр:</h2>
       <form action="http://echo.htmlacademy.ru" method="post">
-        <fieldset class="price">
+        <fieldset class="price-filter">
           <legend>Стоимость</legend>
           <div class="price-range"></div>
           <div class="price-level price-bottom"></div>
@@ -87,19 +87,71 @@
           <li><a href="#">По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
-          <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li><!--Может эти сделать вложеным списком?-->
+          <li><a href="#"><span class="visually-hidden">По убыванию</span></a></li>
+          <!--Может эти "треугольники" сделать вложеным списком?-->
           <li><a href="#"><span class="visually-hidden">По возрастанию</span></a></li>
         </ul>
       </section>
       <section class="goods">
         <h2 class="visually-hidden">Список товаров</h2>
         <ul class="catalog-list">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <a href="#" class="catalog-list-item">
+              <h3 class="ctalog-item-name">Любительская селфи-палка</h3>
+              <img src="#" alt="Любительская селфи-палка">
+              <p class="price">500 руб.</p>
+              <span class="new-mark visually-hidden">New</span>
+            </a>
+            <div class="item-hover">
+              <a href="#">Подробнее</a>
+              <a href="#">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="catalog-list-item">
+              <h3 class="ctalog-item-name">Профессиональная селфи-палка</h3>
+              <img src="#" alt="Профессиональная селфи-палка">
+              <p class="price">1500 руб.</p>
+              <span class="new-mark visually-hidden">New</span>
+            </a>
+            <div class="item-hover">
+              <a href="#">Подробнее</a>
+              <a href="#">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="catalog-list-item">
+              <h3 class="ctalog-item-name">Непотопляемая селфи-палка</h3>
+              <img src="#" alt="Непотопляемая селфи-палка">
+              <p class="price">2500 руб.</p>
+              <span class="new-mark visually-hidden">New</span>
+            </a>
+            <div class="item-hover">
+              <a href="#">Подробнее</a>
+              <a href="#">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="catalog-list-item">
+              <h3 class="ctalog-item-name">Селфи-палка «Следуй за мной»</h3>
+              <img src="#" alt="Селфи-палка «Следуй за мной»">
+              <p class="price">4900 руб.</p>
+              <span class="new-mark">New</span>
+            </a>
+            <div class="item-hover">
+              <a href="#">Подробнее</a>
+              <a href="#">Добавить к сравнению</a>
+            </div>
+          </li>
         </ul>
       </section>
+      <ul class="pagination">
+        <li class="pagination-back"><a href="#">Назад</a></li>
+        <li class="page-number"><a href="#">1</a></li>
+        <li class="page-number"><a href="#">2</a></li>
+        <li class="page-number"><a href="#">3</a></li>
+        <li class="pagination-forward"><a href="#">Вперед</a></li>
+      </ul>
     </div>
   </div>
 </main>
