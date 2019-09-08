@@ -33,7 +33,53 @@
        </nav>
       </header>
 
-<main class="catalog-main"></main>
+<main class="catalog-main">
+  <h1 class="catalog-main-heading">Моноподы для селфи</h1>
+  <div class="breadcrumbs"><!--Может лучше списком?-->
+    <a href="#" class="breadcrumbs-item">Главная</a>
+    <a href="#" class="breadcrumbs-item">Каталог товаров</a>
+    <a href="#" class="breadcrumbs-item">Моноподы для селфи</a>
+  </div>
+  <!--Вот так, например
+    <ul class="breadcrumbs">
+      <li><a href="#" class="breadcrumbs-item">Главная</a></li>
+      <li><a href="#" class="breadcrumbs-item">Каталог товаров</a></li>
+      <li><a href="#" class="breadcrumbs-item">Моноподы для селфи</a></li>
+    </ul>
+  -->
+  <section class="filters">
+    <h2 class="filters-heading">Фильтр:</h2>
+    <form action="http://echo.htmlacademy.ru" method="post">
+      <fieldset class="price">
+        <legend>Стоимость</legend>
+        <div class="price-range"></div>
+        <div class="price-level price-bottom"></div>
+        <div class="price-level price-top"></div>
+      </fieldset>
+      <fieldset class="color">
+        <legend>Цвет</legend>
+        <input type="checkbox" name="colors" class="visually-hidden" id="color-black" checked>
+        <input type="checkbox" name="colors" class="visually-hidden" id="color-white">
+        <input type="checkbox" name="colors" class="visually-hidden" id="color-blue" checked>
+        <input type="checkbox" name="colors" class="visually-hidden" id="color-red" checked>
+        <input type="checkbox" name="colors" class="visually-hidden" id="color-pink">
+        <label for="color-black" class="colors-label">Черный</label>
+        <label for="color-white" class="colors-label">Белый</label>
+        <label for="color-blue" class="colors-label">Синий</label>
+        <label for="color-red" class="colors-label">Красный</label>
+        <label for="color-pink" class="colors-label">Розовый</label>
+      </fieldset>
+      <fieldset class="bluetooth">
+        <legend>Bluetooth</legend>
+        <input type="radio" name="bluetooth" class="visually-hidden" id="bluetooth-yes" checked>
+        <input type="radio" name="bluetooth" class="visually-hidden" id="bluetooth-no">
+        <label for="bluetooth-yes" class="bluetooth-label">Есть</label>
+        <label for="bluetooth-no" class="bluetooth-label">Нет</label>
+      </fieldset>
+      <button type="submit">Показать</button>
+    </form>
+  </section>
+</main>
 
 <footer class="footer">
     <div class="footer-top">
