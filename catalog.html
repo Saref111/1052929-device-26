@@ -18,6 +18,7 @@
           id="search"
           placeholder="Поиск по сайту"
         />
+        <button type="submit" class="search-button">Найти</button>
       </form>
       <nav class="index-nav">
         <ul class="user-nav">
@@ -65,62 +66,82 @@
             </fieldset>
             <fieldset class="color">
               <legend>Цвет</legend>
-              <input
-                type="checkbox"
-                name="colors"
-                class="visually-hidden"
-                id="color-black"
-                checked
-              />
-              <input
-                type="checkbox"
-                name="colors"
-                class="visually-hidden"
-                id="color-white"
-              />
-              <input
-                type="checkbox"
-                name="colors"
-                class="visually-hidden"
-                id="color-blue"
-                checked
-              />
-              <input
-                type="checkbox"
-                name="colors"
-                class="visually-hidden"
-                id="color-red"
-                checked
-              />
-              <input
-                type="checkbox"
-                name="colors"
-                class="visually-hidden"
-                id="color-pink"
-              />
-              <label for="color-black" class="colors-label">Черный</label>
-              <label for="color-white" class="colors-label">Белый</label>
-              <label for="color-blue" class="colors-label">Синий</label>
-              <label for="color-red" class="colors-label">Красный</label>
-              <label for="color-pink" class="colors-label">Розовый</label>
+              <ul class="filters-color-list">
+                <li>
+                  <input
+                  type="checkbox"
+                  name="colors"
+                  class="visually-hidden"
+                  id="color-black"
+                  checked
+                  />
+                  <label for="color-black" class="colors-label">Черный</label>
+                </li>
+                <li>
+                  <input
+                  type="checkbox"
+                  name="colors"
+                  class="visually-hidden"
+                  id="color-white"
+                  />
+                  <label for="color-white" class="colors-label">Белый</label>
+                </li>
+                <li>
+                  <input
+                  type="checkbox"
+                  name="colors"
+                  class="visually-hidden"
+                  id="color-blue"
+                  checked
+                  />
+                  <label for="color-blue" class="colors-label">Синий</label>
+                </li>
+                <li>
+                  <input
+                  type="checkbox"
+                  name="colors"
+                  class="visually-hidden"
+                  id="color-red"
+                  checked
+                  />
+                  <label for="color-red" class="colors-label">Красный</label>
+                </li>
+                <li>
+                  <input
+                  type="checkbox"
+                  name="colors"
+                  class="visually-hidden"
+                  id="color-pink"
+                  />
+                  <label for="color-pink" class="colors-label">Розовый</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="bluetooth">
               <legend>Bluetooth</legend>
-              <input
-                type="radio"
-                name="bluetooth"
-                class="visually-hidden"
-                id="bluetooth-yes"
-                checked
-              />
-              <input
-                type="radio"
-                name="bluetooth"
-                class="visually-hidden"
-                id="bluetooth-no"
-              />
-              <label for="bluetooth-yes" class="bluetooth-label">Есть</label>
-              <label for="bluetooth-no" class="bluetooth-label">Нет</label>
+
+
+              <ul class="filters-bluetooth-list">
+                <li>
+                  <input
+                    type="radio"
+                    name="bluetooth"
+                    class="visually-hidden"
+                    id="bluetooth-yes"
+                    checked
+                  />
+                  <label for="bluetooth-yes" class="bluetooth-label">Есть</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    name="bluetooth"
+                    class="visually-hidden"
+                    id="bluetooth-no"
+                  />
+                  <label for="bluetooth-no" class="bluetooth-label">Нет</label>
+                </li>
+              </ul>
             </fieldset>
             <button type="submit">Показать</button>
           </form>
