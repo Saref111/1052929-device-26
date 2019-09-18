@@ -1,31 +1,48 @@
 @font-face{
-  font-family: 'Gilroy Extra Bold';
-  src: url(/fonts/gilroyextrabold.woff2) format(woff2),
-       url(/fonts/gilroyextrabold.woff) format(woff);
+  font-family: "Open Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'Gilroy Light';
-  src: url(/fonts/gilroylight.woff2) format(woff2),
-       url(/fonts/gilroylight.woff) format(woff);
-  font-weight: normal;
+  font-family: "Open Sans Light";
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: lighter;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'Open Sans';
-  src: url(/fonts/opensans.woff2) format(woff2),
-       url(/fonts/opensans.woff) format(woff);
-  font-weight: normal;
+  font-family: "Gilroy Extra Bold";
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face{
-  font-family: 'Open Sans Light';
-  src: url(/fonts/opensanslight.woff2) format(woff2),
-       url(/fonts/opensanslight.woff) format(woff);
-  font-weight: normal;
+  font-family: "Gilroy Light";
+  src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+  font-weight: lighter;
   font-style: normal;
 }
+
+body {
+  margin: 0;
+
+  font-family: "Open Sans Light";
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+
+/*INDEX HEADER*/
