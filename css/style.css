@@ -98,7 +98,6 @@ a {
 .search-button:active {
   background-color: #000000;
   color: rgba(255, 255, 255, 0.3);
-
 }
 
 .catalog-menu-item,
@@ -215,10 +214,61 @@ a {
   list-style: none;
 }
 
-.popular-menu-item{
+.popular-menu-item {
   color: #000000;
 }
 
-.popular-menu-item:active{
+.popular-menu-item:active {
   opacity: 0.3;
 }
+
+/*Services slider*/
+
+.slider-services {
+  background: linear-gradient(
+    #ffffff,
+    #ffffff 50%,
+    #e5e5e5 51%,
+    #e5e5e5 100%
+  ); /*временное значение*/
+}
+
+.labels-wrap label{
+  font-family: "Gilroy Extra Bold";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #000000;
+
+  background: linear-gradient(
+    #ffffff,
+    #ffffff 34%,
+    #f0c52e 35%,
+    #f0c52e 66%,
+    #ffffff 67%,
+    #ffffff 100%
+  );
+}
+
+.labels-wrap label:focus,
+.labels-wrap label:hover{
+  background: #f0c52e;
+}
+
+.labels-wrap label:active{
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.services-heading {
+  font-family: "Gilroy Extra Bold";
+  font-size: 47px;
+  line-height: 48px;
+  letter-spacing: 0.1px;
+}
+
+.services-slide p{
+  color: #464646;
+}
+
