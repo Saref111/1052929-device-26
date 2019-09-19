@@ -277,7 +277,6 @@ a {
   font-family: "Gilroy Extra Bold";
   font-size: 47px;
   line-height: 48px;
-
 }
 
 .services-slide p {
@@ -286,7 +285,7 @@ a {
 
 /*Logotypes*/
 
-.logotypes-list{
+.logotypes-list {
   list-style: none;
 }
 
@@ -302,5 +301,90 @@ a {
   list-style: none;
   font-family: "Gilroy Extra Bold";
   font-size: 16px;
+}
 
+/*Footer*/
+
+.footer {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.footer-user-nav {
+  list-style: none;
+}
+
+.footer-user-nav-item {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.footer-user-nav-item:hover,
+.footer-user-nav-item:focus{
+  opacity: 1;
+}
+
+.footer-user-nav-item:active{
+  opacity: 0.3;
+}
+
+.footer-onpage-menu {
+  list-style: none;
+}
+
+.footer-onpage-menu-item{
+  color: #ffffff;
+  font-family: "Gilroy Extra Bold";
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 2px;
+}
+
+.footer-onpage-menu-item:hover,
+.footer-onpage-menu-item:focus{
+  opacity: 0.6;
+}
+
+.footer-onpage-menu-item:active{
+  opacity: 0.3;
+}
+
+.phone{
+  color: #ffffff;
+}
+
+.socials-list{
+  list-style: none;
+}
+
+.socials-list-item{
+  opacity: 0.3;
+}
+
+.socials-list-item:focus,
+.socials-list-item:hover{
+  opacity: 0.6;
+}
+
+.socials-list-item:active{
+  opacity: 0.1;
+}
+
+.academy-logo:focus,
+.academy-logo:hover{
+  opacity: 0.6;
+}
+
+.academy-logo:active{
+  opacity: 0.3;
 }
