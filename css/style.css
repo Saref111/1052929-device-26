@@ -90,7 +90,7 @@ a {
   border: 2px solid #000000;
 }
 
-.search-area input:focus ~ .search-button{
+.search-area input:focus ~ .search-button {
   display: inline-block;
 }
 
@@ -169,7 +169,7 @@ a {
   color: #ffffff;
 }
 
-.more {
+.button-line {
   font-family: "Gilroy Extra Bold";
   font-size: 18px;
   line-height: 24px;
@@ -187,12 +187,12 @@ a {
   );
 }
 
-.more:hover,
-.more:focus {
+.button-line:hover,
+.button-line:focus {
   background: #f0c52e;
 }
 
-.more:active {
+.button-line:active {
   background: #f0c52e;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -242,7 +242,7 @@ a {
   list-style: none;
 }
 
-.labels-list-item label{
+.labels-list-item label {
   font-family: "Gilroy Extra Bold";
   font-size: 18px;
   line-height: 24px;
@@ -261,28 +261,46 @@ a {
 }
 
 .labels-list-item label:focus,
-.labels-list-item label:hover{
+.labels-list-item label:hover {
   background: none;
   background-color: #f0c52e;
 }
 
 .labels-list-item label:active,
-.labels-list-item input:checked ~ label{
+.labels-list-item input:checked ~ label {
   background: none;
   color: #f7e184;
   background-color: #000000;
 }
 
-
-
 .services-heading {
   font-family: "Gilroy Extra Bold";
   font-size: 47px;
   line-height: 48px;
-  letter-spacing: 0.1px;
+
 }
 
-.services-slide p{
+.services-slide p {
   color: #464646;
 }
 
+/*Logotypes*/
+
+.logotypes-list{
+  list-style: none;
+}
+
+/*Information*/
+
+.info-heading {
+  font-family: "Gilroy Extra Bold";
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.logistics-list {
+  list-style: none;
+  font-family: "Gilroy Extra Bold";
+  font-size: 16px;
+
+}
