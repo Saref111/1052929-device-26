@@ -37,6 +37,7 @@ body {
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+  color: #000000;
 }
 img {
   max-width: 100%;
@@ -45,4 +46,70 @@ a {
   text-decoration: none;
 }
 
-/*INDEX HEADER*/
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*HEADER*/
+.index-header,
+.catalog-header{
+  background: linear-gradient(#ffffff, #ffffff 20%, #f7e296 20%, #f7e296 100%);
+}
+
+.catalog-menu-item,
+.user-nav-item a,
+.onpage-menu-item{
+  color: #000000;
+}
+
+.catalog-menu-item{
+  line-height: 36px;
+}
+
+.onpage-menu-item{
+  font-family: "Gilroy Extra Bold";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.catalog-link{
+  cursor: pointer;
+}
+
+.catalog-menu,
+.user-nav{
+  list-style: none;
+}
+
+.catalog-menu{
+  background-color: #f7e296;
+}
+
+.logo:hover,
+.logo:focus,
+.user-nav-item a:hover,
+.user-nav-item a:focus,
+.onpage-menu-item:hover,
+.onpage-menu-item:focus,
+.catalog-menu-item:hover,
+.catalog-menu-item:focus{
+  opacity: 0.6;
+}
+
+.logo:active,
+.user-nav-item a:active,
+.onpage-menu-item:active,
+.catalog-menu-item:active{
+  opacity: 0.3;
+}
+
+/*MAIN-INDEX*/
