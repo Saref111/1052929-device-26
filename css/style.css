@@ -85,8 +85,13 @@ a {
 }
 
 .search-button {
+  display: none;
   background: transparent;
   border: 2px solid #000000;
+}
+
+.search-area input:focus ~ .search-button{
+  display: inline-block;
 }
 
 .search-button:hover,
@@ -233,7 +238,11 @@ a {
   ); /*временное значение*/
 }
 
-.labels-wrap label{
+.labels-list {
+  list-style: none;
+}
+
+.labels-list-item label{
   font-family: "Gilroy Extra Bold";
   font-size: 18px;
   line-height: 24px;
@@ -251,15 +260,20 @@ a {
   );
 }
 
-.labels-wrap label:focus,
-.labels-wrap label:hover{
-  background: #f0c52e;
+.labels-list-item label:focus,
+.labels-list-item label:hover{
+  background: none;
+  background-color: #f0c52e;
 }
 
-.labels-wrap label:active{
+.labels-list-item label:active,
+.labels-list-item input:checked ~ label{
+  background: none;
   color: #f7e184;
   background-color: #000000;
 }
+
+
 
 .services-heading {
   font-family: "Gilroy Extra Bold";
