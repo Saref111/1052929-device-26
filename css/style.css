@@ -203,3 +203,22 @@ a {
   font-size: 13px;
   line-height: 20px;
 }
+
+/*Popular links*/
+.popular {
+  font-family: "Gilroy Extra Bold";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popular-menu {
+  list-style: none;
+}
+
+.popular-menu-item{
+  color: #000000;
+}
+
+.popular-menu-item:active{
+  opacity: 0.3;
+}
