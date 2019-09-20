@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "Open Sans Light";
+  font-family: "Open Sans";
   src: url("../fonts/opensanslight.woff2") format("woff2"),
     url("../fonts/opensanslight.woff") format("woff");
   font-weight: lighter;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy Extra Bold";
+  font-family: "Gilroy";
   src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
     url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: bold;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: "Gilroy Light";
+  font-family: "Gilroy";
   src: url("../fonts/gilroylight.woff2") format("woff2"),
     url("../fonts/gilroylight.woff") format("woff");
   font-weight: lighter;
@@ -33,7 +33,7 @@
 body {
   margin: 0;
 
-  font-family: "Open Sans Light", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -116,8 +116,9 @@ a {
 }
 
 .onpage-menu-item {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
+  font-weight: 700;
   line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -158,25 +159,28 @@ a {
 /*Slider*/
 
 .moto {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 56px;
+  font-weight: 700;
 }
 
 .number {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 179.2px;
   line-height: 179.2px; /*Вероятно прийдется уменьшать*/
   color: #ffffff;
+  font-weight: 700;
 }
 
 .button-line {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #000000;
+  font-weight: 700;
 
   background: linear-gradient(
     #ffffff,
@@ -199,9 +203,10 @@ a {
 }
 
 .option-value {
-  font-family: "Gilroy Light", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 36px;
   line-height: 48px;
+  
 }
 
 .open-name {
@@ -212,9 +217,10 @@ a {
 /*Popular links*/
 
 .popular {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .popular-menu {
@@ -245,12 +251,13 @@ a {
 }
 
 .labels-list-item label {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #000000;
+  font-weight: 700;
 
   background: linear-gradient(
     #ffffff,
@@ -276,9 +283,10 @@ a {
 }
 
 .services-heading {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 700;
 }
 
 .services-slide p {
@@ -294,15 +302,17 @@ a {
 /*Information*/
 
 .info-heading {
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 700;
 }
 
 .logistics-list {
   list-style: none;
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  font-weight: 700;
 }
 
 /*Footer*/
@@ -345,11 +355,12 @@ a {
 
 .footer-onpage-menu-item {
   color: #ffffff;
-  font-family: "Gilroy Extra Bold", Arial, Helvetica, sans-serif;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 2px;
+  font-weight: 700;
 }
 
 .footer-onpage-menu-item:hover,
@@ -438,9 +449,10 @@ a {
 }
 
 .contact-us-form-item label {
-  font-family: "Gilroy Extra Bold";
+  font-family: "Gilroy";
   font-size: 18px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .contact-us-form button {
