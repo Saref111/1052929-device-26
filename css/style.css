@@ -325,6 +325,10 @@ a {
   font-weight: 700;
 }
 
+.breadcrumbs{
+  list-style: none;
+}
+
 .breadcrumbs-item{
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
@@ -375,6 +379,60 @@ a {
   color: #a6a6a6;
 }
 
+/*Sorting area*/
+
+.sorting{
+  background-color: #ebebeb;
+}
+
+.sorting-heading{
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sorting-list{
+  list-style: none;
+}
+
+.sorting-list-item{
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sorting-list-item:hover,
+.sorting-list-item:focus{
+  opacity: 0.6;
+}
+
+.sorting-current,
+.sorting-list-item:active{
+  opacity: 1;
+}
+
+.sorting-direction-list{
+  list-style: none;
+}
+
+.sorting-direction-list-item{
+  opacity: 0.3;
+}
+
+.sorting-direction-list-item:hover,
+.sorting-direction-list-item:focus{
+  opacity: 0.6;
+}
+
+.sorting-direction-list-item:active,
+.direction-current{
+  opacity: 1;
+}
 /*Footer*/
 
 .footer {
