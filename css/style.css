@@ -200,7 +200,7 @@ a {
 
 .button-line:active {
   background: #f0c52e;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .option-value {
@@ -433,6 +433,85 @@ a {
 .direction-current{
   opacity: 1;
 }
+
+/*Catalog  goods area*/
+
+.catalog-list{
+  list-style: none;
+}
+
+.catalog-item-name a{
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: inherit;
+}
+
+.price{
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+}
+
+.item-hover a:nth-child(2){
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: inherit;
+  opacity: 0.5;
+}
+
+.item-hover a:nth-child(2):hover,
+.item-hover a:nth-child(2):focus{
+  opacity: 1;
+}
+
+.item-hover a:nth-child(2):active{
+  opacity: 0.3;
+}
+
+/*Pagination*/
+
+.pagination{
+  background-color: #ebebeb;
+  list-style: none;
+}
+
+.pagination a{
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 700;
+}
+
+.page-number a{
+  opacity: 0.3;
+}
+
+.page-number a:hover,
+.page-number a:focus{
+  opacity: 0.6;
+}
+
+.page-number a:active,
+.page-current a{
+  opacity: 1;
+}
+
+.pagination-back a:focus,
+.pagination-back a:hover,
+.pagination-forward a:focus,
+.pagination-forward a:hover{
+  background-color: #d9d9d9;
+}
+
+.pagination-back a:active,
+.pagination-forward a:active{
+  color: rgba(0, 0, 0, 0.3);
+}
+
 /*Footer*/
 
 .footer {
