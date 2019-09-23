@@ -90,7 +90,8 @@ a {
   border: 2px solid #000000;
 }
 
-.search-area input:focus ~ .search-button {
+.search-area input:focus ~ .search-button,
+.search-button:hover {
   display: inline-block;
 }
 
