@@ -58,9 +58,17 @@ body {
   background-repeat: no-repeat;
   background-position: center 0;
 }
+
+.catalog-body{
+  background-image: url("/img/device-catalog.jpg"); /*temporary, for markup*/
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
 img {
   max-width: 100%;
 }
+
 a {
   text-decoration: none;
 }
@@ -84,7 +92,7 @@ a {
   margin-right: 140px;
   margin-left: 140px;
   padding-right: 60px;
-  padding-left: 60px;
+  padding-left: 59px;
   padding-top: 22px;
 
   width: 1160px;
@@ -94,7 +102,13 @@ a {
   background: linear-gradient(#ffffff, #ffffff 20%, #f7e296 20%, #f7e296 100%);
 }
 
+.nav-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .search-area{
+  margin-right: 210px;
 }
 
 .search-area input {
@@ -154,6 +168,49 @@ a {
   color: #000000;
 }
 
+.catalog-menu-item,
+.user-nav-item a{
+  letter-spacing: 0.4px;
+}
+
+.user-nav{
+  padding: 0;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.user-nav-item:first-child,
+.user-nav-item:nth-child(2),
+.user-nav-item:nth-child(3){
+  display: none;
+}
+
+.user-nav .login-enter,
+.user-nav .login{
+  display: block;
+}
+
+.login-enter{
+  margin-right: 237px;
+}
+
+.login{
+  margin-right: 18px;
+}
+
+.login:nth-child(3){
+  margin-right: 83px;
+}
+
+.user-nav-item:nth-child(4) a,
+.user-nav-item:nth-child(5) a{
+  letter-spacing: 0.1px;
+}
+
+.user-nav-item:nth-child(4){
+  margin-right: 62px;
+}
+
 .catalog-menu-item {
   line-height: 36px;
 }
@@ -174,6 +231,8 @@ a {
 .catalog-menu,
 .user-nav,
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
