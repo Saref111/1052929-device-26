@@ -49,7 +49,7 @@ body {
 
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 30px;
   font-weight: 400;
   color: #000000;
   letter-spacing: 0.1px;
@@ -390,33 +390,27 @@ a {
 
 .slide{
   position: absolute;
-
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 
   opacity: 0.4;
-  background: linear-gradient(#f7e296, #f7e296 113px, #ffffff 113px, #ffffff 100%);
-}
-
-.slide:nth-child(3){
-  z-index: 4;
-}
-.slide:nth-child(4){
-  z-index: 3;
-  display: none;
-}
-.slide:nth-child(5){
-  z-index: 2;
-  display: none;
+  background: linear-gradient(#f7e296, #f7e296 111px, #ffffff 111px, #ffffff 100%);
 }
 
 .moto {
+  margin: 0;
+
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 56px;
   font-weight: 700;
+  letter-spacing: 0.7px;
 }
 
 .number {
+  position: absolute;
+
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 179.2px;
   line-height: 179.2px; /*Вероятно прийдется уменьшать*/
@@ -424,12 +418,22 @@ a {
   font-weight: 700;
 }
 
+.describtion{
+  margin: 0;
+  margin-bottom: 48px;
+  letter-spacing: 0.15px;
+}
+
 .button-line {
+  margin-left: 1px;
+  padding-left: 42px;
+  padding-right: 39px;
+
   border: none;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
@@ -458,12 +462,96 @@ a {
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 36px;
   line-height: 48px;
+  letter-spacing: 0.5px;
 }
 
-.open-name {
+.option-name {
   font-size: 13px;
   line-height: 20px;
+  letter-spacing: 0.2px;
 }
+
+.slide .options {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.options,
+.option-name,
+.option-value{
+  margin: 0;
+}
+
+.options{
+  margin-top: 55px;
+  min-height: 80px;
+}
+
+.option-name:nth-child(1){
+  order: 4;
+
+  margin-right: 80px;
+}
+.option-name:nth-child(3){
+  order: 5;
+  margin-right: 80px;
+}
+.option-name:nth-child(5){
+  order: 6;
+}
+.option-value:nth-child(2){
+  order: 1;
+
+  margin-right: 78px;
+}
+.option-value:nth-child(4){
+  order: 2;
+  margin-right: 76px;
+}
+.option-value:nth-child(6){
+  order: 3;
+}
+
+.slide:nth-child(3){
+  z-index: 4;
+  padding-left: 90px;
+  padding-right: 80px;
+  margin-top: 2px;
+}
+
+.slide:nth-child(3) img{
+  margin-right: 125px;
+}
+
+.slide:nth-child(3) .slide-info-wrap{
+  padding-top: 79px;
+}
+
+.slide:nth-child(3) .moto{
+  margin-right: 80px;
+  margin-bottom: 20px;
+}
+
+.slide:nth-child(3) .number{
+  top: -15px;
+  right: 49px;
+}
+
+.slide:nth-child(3) .button-line{
+  margin-bottom: 40px;
+}
+
+.slide:nth-child(4){
+  z-index: 3;
+  display: none;
+}
+.slide:nth-child(5){
+  z-index: 2;
+  display: none;
+}
+
+
 
 /*Popular links*/
 
