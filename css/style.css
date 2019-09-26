@@ -687,6 +687,10 @@ li:nth-child(4) .popular-menu-item {
 /*Services slider*/
 
 .slider-services {
+  padding-left: 140px;
+  padding-right: 140px;
+  opacity: 0.4;
+
   background: linear-gradient(#ffffff,
       #ffffff 50%,
       #e5e5e5 51%,
@@ -694,15 +698,32 @@ li:nth-child(4) .popular-menu-item {
   /*временное значение*/
 }
 
+.slider-services-container{
+  display: flex;
+}
+
 .labels-list {
+  padding: 0;
+  padding-top: 80px;
+  margin: 0;
   list-style: none;
 }
 
+.labels-list-item:not(:last-child){
+  margin-bottom: 26px;
+}
+
 .labels-list-item label {
+  display: block;
+  width: 160px;
+  padding-left: 5px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  text-align: center;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
@@ -715,6 +736,8 @@ li:nth-child(4) .popular-menu-item {
       #ffffff 100%);
 }
 
+
+
 .labels-list-item label:focus,
 .labels-list-item label:hover {
   background: none;
@@ -723,9 +746,27 @@ li:nth-child(4) .popular-menu-item {
 
 .labels-list-item label:active,
 .labels-list-item input:checked~label {
+  display: inline-block;
+  text-align: left;
+  width: 280px;
   background: none;
   color: #f7e184;
   background-color: #000000;
+}
+
+.labels-list-item:nth-child(1) label:active,
+.labels-list-item:nth-child(1) input:checked~label{
+  padding-left: 19px;
+}
+
+.labels-list-item:nth-child(2) label:active,
+.labels-list-item:nth-child(2) input:checked~label{
+  padding-left: 24px;
+}
+
+.labels-list-item:nth-child(3) label:active,
+.labels-list-item:nth-child(3) input:checked~label{
+  padding-left: 37px;
 }
 
 .services-heading {
