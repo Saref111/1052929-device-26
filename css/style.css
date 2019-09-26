@@ -801,10 +801,34 @@ li:nth-child(4) .popular-menu-item {
 
 /*Logotypes*/
 
-.logotypes-list {
-  list-style: none;
+.logotypes{
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
+.logotypes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logotypes-list-item img {
+
+  filter: url("../img/filter.svg#grayscale"); /* Firefox 3.5+ */
+  filter: gray; /* IE6-9 */
+  filter: grayscale(100%);
+   -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+  transition: all 0.5s;
+}
+
+.logotypes-list-item img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
 /*Information*/
 
 .info-heading {
