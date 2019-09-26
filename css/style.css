@@ -687,15 +687,14 @@ li:nth-child(4) .popular-menu-item {
 /*Services slider*/
 
 .slider-services {
+  min-height: 388px;
   padding-left: 140px;
   padding-right: 140px;
-  opacity: 0.4;
 
   background: linear-gradient(#ffffff,
-      #ffffff 50%,
-      #e5e5e5 51%,
-      #e5e5e5 100%);
-  /*временное значение*/
+      #ffffff 99px,
+      #e5e5e5 99px,
+      #e5e5e5 );
 }
 
 .slider-services-container{
@@ -728,12 +727,12 @@ li:nth-child(4) .popular-menu-item {
   color: #000000;
   font-weight: 700;
 
-  background: linear-gradient(#ffffff,
-      #ffffff 34%,
-      #f0c52e 35%,
-      #f0c52e 66%,
-      #ffffff 67%,
-      #ffffff 100%);
+  background: linear-gradient(transparent,
+      transparent 15px,
+      #f0c52e 15px,
+      #f0c52e 23px,
+      transparent 23px,
+      transparent );
 }
 
 
@@ -769,15 +768,35 @@ li:nth-child(4) .popular-menu-item {
   padding-left: 37px;
 }
 
+.slider-services-wrap{
+  position: relative;
+  width: 900px;
+}
+
+.services-slide{
+  padding-left: 121px;
+  padding-top: 25px;
+  position: absolute;
+}
+
 .services-heading {
+  margin-bottom: 31px;
+
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .services-slide p {
+  margin-right: 320px;
+  letter-spacing: 0.25px;
   color: #464646;
+}
+
+.services-slide:nth-child(2) p{
+  white-space: pre-line;
 }
 
 /*Logotypes*/
