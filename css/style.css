@@ -444,7 +444,7 @@ a {
   background: linear-gradient(transparent,
       transparent 33%,
       #f0c52e 34%,
-      #f0c52e 65%,
+      #f0c52e 66%,
       transparent 66%,
       transparent 100%);
 }
@@ -831,18 +831,74 @@ li:nth-child(4) .popular-menu-item {
 }
 /*Information*/
 
+.info{
+  margin-left: 140px;
+  margin-right: 140px;
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+}
+
+.info-about-us{
+  padding-top: 130px;
+  width: 500px;
+}
+
 .info-heading {
+  margin: 0;
+  margin-bottom: 43px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+.info-about-us p:nth-child(2){
+  margin-right: 40px;
+  margin-bottom: 29px;
+}
+
+.info-about-us p:nth-child(3){
+  margin-right: 35px;
+  margin-bottom: 71px;
+  letter-spacing: -0.19px;
+  white-space: pre-line;
 }
 
 .logistics-list {
+  margin-bottom: 64px;
+  padding-left: 35px;
   list-style: none;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
+}
+
+.logistics-list li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.info-about-us .button-line{
+  letter-spacing: 3.65px;
+  padding-left: 22px;
+  padding-right: 20px;
+}
+
+.info-address{
+  width: 560px;
+  padding-top: 130px;
+}
+
+.map-link {
+  display: inline-block;
+  margin-bottom: 89px;
+}
+
+.info-address .button-line{
+  padding-right: 37px;
+  padding-left: 40px;
+  letter-spacing: 3.65px;
 }
 
 /*Main-catalog*/
