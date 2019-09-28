@@ -228,15 +228,15 @@ a {
   display: block;
 }
 
-.login-enter {
+.user-nav .login-enter {
   margin-right: 237px;
 }
 
-.login {
+.user-nav .login {
   margin-right: 18px;
 }
 
-.login:nth-child(3) {
+.user-nav .login:nth-child(3) {
   margin-right: 83px;
 }
 
@@ -834,13 +834,14 @@ li:nth-child(4) .popular-menu-item {
 .info{
   margin-left: 140px;
   margin-right: 140px;
+  margin-bottom: 87px;
   display: flex;
-  justify-content: space-between;
   width: 1160px;
 }
 
 .info-about-us{
   padding-top: 130px;
+  margin-right: 99px;
   width: 500px;
 }
 
@@ -897,7 +898,7 @@ li:nth-child(4) .popular-menu-item {
 
 .info-address .button-line{
   padding-right: 37px;
-  padding-left: 40px;
+  padding-left: 40.5px;
   letter-spacing: 3.65px;
 }
 
@@ -1100,8 +1101,22 @@ li:nth-child(4) .popular-menu-item {
 /*Footer*/
 
 .footer {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 62px;
+
+  opacity: 0.4;
   background-color: #464646;
   color: #ffffff;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo-wrap{
+  padding-top: 2px;
 }
 
 .footer-logo:hover,
@@ -1114,10 +1129,14 @@ li:nth-child(4) .popular-menu-item {
 }
 
 .footer-user-nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .footer-user-nav-item {
+  margin: 0;
   color: #ffffff;
   opacity: 0.7;
 }
@@ -1129,6 +1148,21 @@ li:nth-child(4) .popular-menu-item {
 
 .footer-user-nav-item:active {
   opacity: 0.3;
+}
+
+.footer-user-nav li:first-child,
+.footer-user-nav li:nth-child(2),
+.footer-user-nav li:nth-child(3) {
+  display: none;
+}
+
+.footer-user-nav li.login-enter,
+.footer-user-nav li.login {
+  display: block;
+}
+
+.footer-user-nav li:not(:first-child){
+  margin-left: 63px;
 }
 
 .footer-onpage-menu {
