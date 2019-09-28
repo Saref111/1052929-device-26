@@ -64,7 +64,7 @@ body {
   background-image: url("/img/device-catalog.jpg");
   /*temporary, for markup*/
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center 1460px;
 }
 
 img {
@@ -225,7 +225,7 @@ a {
 
 .user-nav .login-enter,
 .user-nav .login {
-  display: block;
+  display: list-item;
 }
 
 .user-nav .login-enter {
@@ -1158,11 +1158,15 @@ li:nth-child(4) .popular-menu-item {
 
 .footer-user-nav li.login-enter,
 .footer-user-nav li.login {
-  display: block;
+  display: list-item;
 }
 
-.footer-user-nav li:not(:first-child){
+.footer-user-nav li:not(:first-child):not(:nth-child(3)){
   margin-left: 63px;
+}
+.footer-user-nav li:nth-child(3){
+  margin-left: 20px;
+  opacity: 0.3;
 }
 
 .footer-onpage-menu {
