@@ -1111,6 +1111,7 @@ li:nth-child(4) .popular-menu-item {
 }
 
 .footer-top {
+  margin-bottom: 21px;
   display: flex;
   justify-content: space-between;
 }
@@ -1164,12 +1165,29 @@ li:nth-child(4) .popular-menu-item {
 .footer-user-nav li:not(:first-child):not(:nth-child(3)){
   margin-left: 63px;
 }
+
 .footer-user-nav li:nth-child(3){
   margin-left: 20px;
   opacity: 0.3;
 }
 
+.footer-middle{
+  display: flex;
+}
+
+.footer-middle address {
+  margin-right: 165px;
+  font-style: normal;
+  letter-spacing: 0.0px;
+}
+
 .footer-onpage-menu {
+  margin: 0;
+  margin-top: 3px;
+  margin-right: 188px;
+  padding: 0;
+  width: 440px;
+  display: flex;
   list-style: none;
 }
 
@@ -1179,8 +1197,12 @@ li:nth-child(4) .popular-menu-item {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 3.6px;
   font-weight: 700;
+}
+
+.footer-onpage-menu li:not(:last-child){
+  margin-right: 33px;
 }
 
 .footer-onpage-menu-item:hover,
@@ -1194,6 +1216,7 @@ li:nth-child(4) .popular-menu-item {
 
 .phone {
   color: #ffffff;
+  letter-spacing: 0.0px;
 }
 
 .socials-list {
