@@ -61,7 +61,7 @@ body {
 }
 
 .catalog-body {
-  background-image: url("/img/device-catalog.jpg");
+  background-image: url("/img/device-catalog-hover.png");
   /*temporary, for markup*/
   background-repeat: no-repeat;
   background-position: center 0;
@@ -305,7 +305,7 @@ a {
   padding-top: 32px;
 
   position: absolute;
-  height: 173px;
+  height: 168px;
   width: 1160px;
   z-index: 10;
 
@@ -1173,51 +1173,97 @@ li:nth-child(4) .popular-menu-item {
   min-height: 507px;
 }
 
-.item-picture{
-  margin-bottom: 20px;
-}
-
 .catalog-list-item {
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  overflow: hidden;
+}
+
+.item-picture{
+  order: 1;
 }
 
 .catalog-item-name {
   margin: 0;
+  margin-top: 22px;
   width: 270px;
-  letter-spacing: 10px;
+  order: 2;
+}
+
+.catalog-list-element:nth-child(2) .catalog-item-name {
+  padding-right: 50px;
 }
 
 .catalog-item-name a {
+  display: block;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 10px;
+  line-height: 25px;
   color: inherit;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.1px;
   white-space: pre-wrap;
 }
 
+.catalog-list-element:not(:nth-child(3)) .item-name-link{
+  letter-spacing: 0.3px;
+}
+
 .price {
+  margin-top: 24px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #464646;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.06px;
   white-space: nowrap;
   font-weight: lighter;
+  order: 3;
+}
+
+.catalog-list-element:first-child .price {
+  margin-left: 27px;
+}
+
+.catalog-list-element:nth-child(2) .price {
+  margin-left: 16px;
+}
+
+.catalog-list-element:nth-child(3) .price {
+  margin-left: 14px;
+}
+
+.catalog-list-element:nth-child(4) .price {
+  margin-left: 13px;
 }
 
 .item-hover{
   position: absolute;
-  top: 20px;
+  width: 360px;
+  height: 380px;
+  top: -380px;
+  padding-top: 180px;
+  background-color: #eeeeee;
+}
+
+.item-hover a{
+  margin-right: 75px;
+  margin-left: 82px;
+  margin-bottom: 22px;
+  padding: 0;
+  padding-left: 37px;
+  width: 200px;
+  display: block;
+  letter-spacing: 3.6px;
 }
 
 .item-hover a:nth-child(2) {
+  margin-left: 75px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 20px;
   color: inherit;
+  letter-spacing: 0.1px;
   opacity: 0.5;
 }
 
@@ -1228,6 +1274,14 @@ li:nth-child(4) .popular-menu-item {
 
 .item-hover a:nth-child(2):active {
   opacity: 0.3;
+}
+
+.item-picture:hover ~ .item-hover,
+.item-picture:focus ~ .item-hover,
+.item-hover:hover,
+.item-hover:focus-within{
+  top: 0;
+  transition: all 2s;
 }
 
 /*Pagination*/
