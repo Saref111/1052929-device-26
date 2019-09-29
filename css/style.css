@@ -64,7 +64,7 @@ body {
   background-image: url("/img/device-catalog.jpg");
   /*temporary, for markup*/
   background-repeat: no-repeat;
-  background-position: center 1460px;
+  background-position: center 0;
 }
 
 img {
@@ -376,8 +376,6 @@ a {
 .index-main,
 .catalog-main {
   width: 100%;
-
-
 }
 
 .slider-top {
@@ -428,7 +426,6 @@ a {
 }
 
 .button-line {
-  margin-left: 1px;
   padding-left: 42px;
   padding-right: 39px;
 
@@ -904,43 +901,97 @@ li:nth-child(4) .popular-menu-item {
 
 /*Main-catalog*/
 
+.catalog-main{
+  padding-top: 37px;
+  min-height: 1466px;
+}
+
+.heading-breadcrumbs-wrap{
+  margin-left: 200px;
+  margin-bottom: 45px;
+}
+
 .catalog-main-heading {
+  margin: 0;
+  margin-bottom: 20px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: 700;
+  letter-spacing: 0.6px;
 }
 
 .breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
+.breadcrumbs li:not(:last-child){
+  margin-right: 38px;
+}
+
 .breadcrumbs-item {
+  margin: 0;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
   opacity: 0.3;
+  color: inherit;
+}
+
+.breadcrumbs-item:hover,
+.breadcrumbs-item:focus{
+  opacity: 0.6;
+}
+
+.breadcrumbs-item:active{
+  opacity: 0.2;
+}
+
+.catalog-wrap{  /*area of filters, sorting, catalog and pagination*/
+  display: flex;
+  width: 100%;
+
+  opacity: 0.4;
 }
 
 /*FILTERS*/
 
 .filters {
+  width: 468px;
   background-color: #eeeeee;
 }
 
 .filters-heading {
+  margin: 0;
+  padding-top: 22px;
+  padding-left: 201px;
+  padding-right: 176px;
+  padding-bottom: 23px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
 
   background-color: #dcdcdc;
 }
 
-.filters fieldset {
+.filters form{
+  margin-left: 198px;
+  padding-top: 82px;
+}
+
+.price-filter,
+.color,
+.bluetooth {
+  padding: 0;
+  margin: 0;
+  margin-left: 2px;
   border: none;
 }
 
@@ -959,11 +1010,75 @@ li:nth-child(4) .popular-menu-item {
 .filters label {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: 300;
+  letter-spacing: -0.5px;
 }
 
 .filters input:disabled~label {
   color: #a6a6a6;
 }
+
+.price-filter{
+  margin-bottom: 14px;
+  min-height: 125px;
+  position: relative;
+}
+
+.price-range,
+.price-level{
+  position: absolute;
+}
+
+.price-range{
+  content: "";
+  width: 200px;
+  height: 2px;
+  background: linear-gradient(to right, #91c92f, #91c92f 60%, #dbdbdb 60%, #dbdbdb);
+  top: 58px;
+}
+
+.price-level{
+  content: "";
+  width: 24px;
+  height: 24px;
+}
+
+.color{
+  padding-top: 23px;
+  margin-bottom: 48px;
+}
+
+.filters-color-list{
+  margin: 0;
+  padding: 0;
+  padding-left: 38px;
+}
+
+.filters-color-list li:not(:last-child){
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.bluetooth{
+  padding-top: 22px;
+  margin-bottom: 42px;
+}
+
+.filters-bluetooth-list{
+  margin: 0;
+  padding: 0;
+  padding-left: 38px;
+}
+
+.filters-bluetooth-list li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.filters .button-line{
+  padding-left: 41px;
+  padding-right: 37px;
+}
+
+/*CATALOG AND SORTING AREA*/
 
 /*Sorting area*/
 
@@ -1105,6 +1220,8 @@ li:nth-child(4) .popular-menu-item {
   padding-right: 140px;
   padding-top: 62px;
 
+  min-height: 323px;
+
   background-color: #464646;
   color: #ffffff;
 }
@@ -1179,6 +1296,7 @@ li:nth-child(4) .popular-menu-item {
   margin-right: 165px;
   font-style: normal;
   letter-spacing: 0.0px;
+  white-space: nowrap;
 }
 
 .footer-onpage-menu {
@@ -1217,6 +1335,7 @@ li:nth-child(4) .popular-menu-item {
 .phone {
   color: #ffffff;
   letter-spacing: 0.0px;
+  white-space: nowrap;
 }
 
 .footer-bottom {
