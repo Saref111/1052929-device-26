@@ -1083,18 +1083,30 @@ li:nth-child(4) .popular-menu-item {
 /*Sorting area*/
 
 .sorting {
+  display: flex;
+  padding-top: 21px;
+  padding-left: 73px;
+  padding-bottom: 15px;
   background-color: #ebebeb;
 }
 
 .sorting-heading {
+  margin: 0;
+  margin-right: 50px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
+  letter-spacing: 3.6px;
   text-transform: uppercase;
 }
 
 .sorting-list {
+  display: flex;
+  padding: 0;
+  padding-top: 3px;
+  margin: 0;
+  margin-right: 232px;
   list-style: none;
 }
 
@@ -1103,8 +1115,14 @@ li:nth-child(4) .popular-menu-item {
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
+  letter-spacing: 0.3px;
   color: #000000;
+  vertical-align: top;
   opacity: 0.3;
+}
+
+.sorting-list li:not(:last-child){
+  margin-right: 29px;
 }
 
 .sorting-list-item:hover,
@@ -1118,6 +1136,8 @@ li:nth-child(4) .popular-menu-item {
 }
 
 .sorting-direction-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
