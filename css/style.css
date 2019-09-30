@@ -1157,6 +1157,10 @@ li:nth-child(4) .popular-menu-item {
 
 /*Catalog  goods area*/
 
+.goods{
+  margin-bottom: 7px;
+}
+
 .catalog-list {
   margin: 0;
   padding: 0;
@@ -1278,17 +1282,33 @@ li:nth-child(4) .popular-menu-item {
 
 .item-picture:hover ~ .item-hover,
 .item-picture:focus ~ .item-hover,
-.item-hover:hover,
-.item-hover:focus-within{
+.item-hover:hover{
   top: 0;
   transition: all 2s;
+}
+
+.item-hover:focus-within{
+  top: 0;
 }
 
 /*Pagination*/
 
 .pagination {
+  margin: 0;
+  margin-left: 72px;
+  margin-right: 140px;
+  padding: 0;
+  padding-left: 30px;
+  padding-top: 21px;
+  padding-bottom: 19px;
+  padding-right: 27px;
+
+  display: flex;
+
   background-color: #ebebeb;
   list-style: none;
+
+  letter-spacing: 3.6px;
 }
 
 .pagination a {
@@ -1297,6 +1317,7 @@ li:nth-child(4) .popular-menu-item {
   line-height: 24px;
   color: inherit;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .page-number a {
@@ -1311,6 +1332,18 @@ li:nth-child(4) .popular-menu-item {
 .page-number a:active,
 .page-current a {
   opacity: 1;
+}
+
+.pagination-back{
+  margin-right: 237px;
+}
+
+.page-number {
+  margin-right: 28px;
+}
+
+.page-number:nth-child(4){
+  margin-right: 227px;
 }
 
 .pagination-back a:focus,
