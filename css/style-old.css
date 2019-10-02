@@ -889,8 +889,21 @@ li:nth-child(4) .popular-menu-item {
   font-weight: 700;
 }
 
+.logistics-list li{
+  position: relative;
+}
+
 .logistics-list li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.logistics-list li::before{
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 10px;
+  border: 2px solid red;
 }
 
 .info-about-us .button-line {
