@@ -118,9 +118,21 @@ a {
 }
 
 .search-area {
+  position: relative;
   margin-right: 120px;
   width: 446px;
   min-height: 52px;
+}
+
+.search-area::before{
+  content:"";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/search.svg');
+  background-repeat: no-repeat;
+  top: 20px;
+  left: 5px;
 }
 
 .search-area input {
@@ -355,6 +367,7 @@ input:focus~.search-button::before {
   display: flex;
 }
 
+
 .main-nav li:first-child:focus-within .catalog-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,8 +400,11 @@ input:focus~.search-button::before {
   margin-bottom: 5px;
 }
 
+.user-nav-item
 .logo:hover,
 .logo:focus,
+.user-nav-item a:hover::before,
+.user-nav-item a:focus::before,
 .user-nav-item a:hover,
 .user-nav-item a:focus,
 .onpage-menu-item:hover,
@@ -400,9 +416,60 @@ input:focus~.search-button::before {
 
 .logo:active,
 .user-nav-item a:active,
+.user-nav-item a:active::before,
 .onpage-menu-item:active,
 .catalog-menu-item:active {
   opacity: 0.3;
+}
+
+.user-nav-item{
+  position: relative;
+}
+
+.user-nav-item:first-child a::before,
+.user-nav-item:nth-child(2) a::before{
+  content:"";
+  position: absolute;
+  width: 13px;
+  height: 12px;
+  background-image: url('../img/user.svg');
+  background-repeat: no-repeat;
+  top: 9px;
+  left: -25px;
+}
+
+.user-nav-item:nth-child(4) a::before{
+  content:"";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url('../img/compare.svg');
+  background-repeat: no-repeat;
+  top: 11px;
+  left: -19px;
+}
+
+.user-nav-item:nth-child(5) a::before{
+  content:"";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-image: url('../img/cart.svg');
+  background-repeat: no-repeat;
+  top: 9px;
+  left: -22px;
+}
+
+.main-nav li:first-child::after{
+  content:"";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/plus.png');
+  background-repeat: no-repeat;
+  top: 7px;
+  right: -28px;
+  pointer-events: none;
 }
 
 /*MAIN-INDEX*/
@@ -440,6 +507,33 @@ input:focus~.search-button::before {
 
 .labels {
   position: absolute;
+  bottom: 254px;
+  right: 64px;
+  z-index: 10;
+
+  display: flex;
+}
+
+.labels label{
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-right: 20px;
+  -webkit-box-shadow: inset 0 0 0 1px #000000;
+  box-shadow: inset 0 0 0 1px #000000;
+}
+
+.labels input:nth-child(1):checked ~ label:nth-child(4),
+.labels input:nth-child(2):checked ~ label:nth-child(5),
+.labels input:nth-child(3):checked ~ label:nth-child(6){
+  -webkit-box-shadow: inset 0 0 0 1px #000000,
+              inset 0 0 0 4px #ffffff,
+              inset 0 0 0 5px #000000;
+  box-shadow: inset 0 0 0 1px #000000,
+              inset 0 0 0 4px #ffffff,
+              inset 0 0 0 5px #000000;
 }
 
 .moto {
