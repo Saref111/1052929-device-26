@@ -58,6 +58,7 @@ body {
   letter-spacing: 0.1px;
 
   background-image: url("../img/device-index.jpg");
+  opacity: 0.5;
   /*temporary, for markup*/
   background-repeat: no-repeat;
   background-position: center 0;
@@ -647,7 +648,7 @@ input:focus~.search-button::before {
   letter-spacing: 0.15px;
 }
 
-.describtion span{
+.one-line-ending{
   display: inline-block;
   padding-left: 4px;
   margin-right: -20px;
@@ -929,13 +930,15 @@ li:nth-child(4) .popular-menu-item {
 .logotypes {
   margin-left: 140px;
   margin-right: 140px;
+  margin-bottom: 7px;
 }
 
 .logotypes-list {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 93px;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -943,7 +946,6 @@ li:nth-child(4) .popular-menu-item {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-
 
 .logotypes-list-item img {
 
@@ -1000,6 +1002,7 @@ li:nth-child(4) .popular-menu-item {
 }
 
 .info-about-us p:nth-child(3) {
+  width: 465px;
   margin-right: 35px;
   margin-bottom: 71px;
   letter-spacing: -0.19px;
