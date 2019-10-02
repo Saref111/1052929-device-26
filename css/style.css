@@ -159,27 +159,6 @@ a {
   letter-spacing: 0.1px;
 }
 
-.search-area input::-webkit-input-placeholder {
-  opacity: 0.3;
-  letter-spacing: 0.1px;
-}
-
-.search-area input:-ms-input-placeholder {
-  opacity: 0.3;
-  letter-spacing: 0.1px;
-}
-
-.search-area input::-ms-input-placeholder {
-  opacity: 0.3;
-  letter-spacing: 0.1px;
-  line-height: 1px;
-}
-
-.search-area input::-moz-placeholder {
-  opacity: 0.3;
-  letter-spacing: 0.1px;
-}
-
 .search-area input:hover::-webkit-input-placeholder {
   opacity: 0.6;
 }
@@ -197,22 +176,6 @@ a {
 }
 
 .search-area input:hover::placeholder {
-  opacity: 0.6;
-}
-
-.search-area input:hover::-webkit-input-placeholder {
-  opacity: 0.6;
-}
-
-.search-area input:hover:-ms-input-placeholder {
-  opacity: 0.6;
-}
-
-.search-area input:hover::-ms-input-placeholder {
-  opacity: 0.6;
-}
-
-.search-area input:hover::-moz-placeholder {
   opacity: 0.6;
 }
 
@@ -1387,6 +1350,7 @@ li:nth-child(4) .popular-menu-item {
 
 .price {
   margin-top: 24px;
+  margin-right: -10px;
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -1454,12 +1418,10 @@ li:nth-child(4) .popular-menu-item {
   opacity: 0.3;
 }
 
-.item-picture:hover~.item-hover,
-.item-picture:focus~.item-hover,
+.item-picture:hover ~ .item-hover,
+.item-picture:focus ~ .item-hover,
 .item-hover:hover {
   top: 0;
-  -webkit-transition: all 2s;
-  transition: all 2s;
 }
 
 .item-hover:focus-within {
