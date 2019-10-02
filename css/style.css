@@ -58,6 +58,7 @@ body {
   letter-spacing: 0.1px;
 
   background-image: url("../img/device-index.jpg");
+  opacity: 0.5;
   /*temporary, for markup*/
   background-repeat: no-repeat;
   background-position: center 0;
@@ -300,9 +301,12 @@ input:focus~.search-button::before {
 }
 
 .user-nav-item:nth-child(4) {
-  margin-right: 62px;
+  margin-right: 65px;
 }
 
+.user-nav-item:nth-child(5){
+  margin-right: -10px;
+}
 
 .catalog-menu-item {
   line-height: 36px;
