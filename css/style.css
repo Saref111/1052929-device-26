@@ -53,19 +53,6 @@ body {
   font-weight: 400;
   color: #000000;
   letter-spacing: 0.1px;
-
-  background-image: url("../img/device-index.jpg");
-  opacity: 0.5;
-  /*temporary, for markup*/
-  background-repeat: no-repeat;
-  background-position: center 0;
-}
-
-.catalog-body {
-  background-image: url("../img/device-catalog-hover.png");
-  /*temporary, for markup*/
-  background-repeat: no-repeat;
-  background-position: center 0;
 }
 
 img {
@@ -1280,7 +1267,7 @@ li:nth-child(6) .popular-menu-item::before{
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
   padding-left: 60px;
 }
 
@@ -1344,7 +1331,8 @@ li:nth-child(6) .popular-menu-item::before{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 1440px;
+  margin: 0 auto;
 
 
 }
@@ -1352,14 +1340,25 @@ li:nth-child(6) .popular-menu-item::before{
 /*FILTERS*/
 
 .filters {
+  position: relative;
   width: 468px;
   min-height: 1286px;
   background-color: #eeeeee;
 }
 
+.filters::before{
+  content:"";
+  position: absolute;
+  width: 3600px;
+  height: 1360px;
+  background-image: linear-gradient(#dcdcdc, #dcdcdc 70px, #eeeeee 70px, #eeeeee);
+  z-index: -1;
+  right: 0px;
+}
+
 .filters-heading {
   margin: 0;
-  padding-top: 22px;
+  padding-top: 23px;
   padding-left: 201px;
   padding-right: 176px;
   padding-bottom: 23px;
@@ -1385,6 +1384,23 @@ li:nth-child(6) .popular-menu-item::before{
   margin: 0;
   margin-left: 2px;
   border: none;
+  position: relative;
+}
+
+.price-filter::before,
+.color::before,
+.bluetooth::before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 201px;
+  background-color: #000000;
+  top: -12px;
+  left: -1px;
+}
+
+.price-filter::before{
+  top: -13px;
 }
 
 .filters legend {
@@ -1590,13 +1606,25 @@ input[name="bluetooth"]:active ~ .bluetooth-label::before{
 /*Sorting area*/
 
 .sorting {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 21px;
+  padding-top: 22px;
   padding-left: 73px;
   padding-bottom: 15px;
   background-color: #ebebeb;
+}
+
+.sorting::after{
+  position: absolute;
+  content: "";
+  width: 3600px;
+  height: 70px;
+  background-color: #ebebeb;
+  top: 0px;
+  left: 970px;
+  z-index: -1;
 }
 
 .sorting-heading {
@@ -1790,7 +1818,7 @@ li:last-child .sorting-direction-list-item {
   height: 380px;
   top: -380px;
   padding-top: 180px;
-  background-color: #eeeeee;
+  background-color: rgba(238, 238, 238, 0.7);
 }
 
 .item-hover a {
