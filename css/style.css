@@ -1293,7 +1293,20 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .breadcrumbs li:not(:last-child) {
+  position: relative;
   margin-right: 38px;
+}
+
+.breadcrumbs li:not(:last-child)::after{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-bottom: 1px solid #000000;
+  border-left: 1px solid #000000;
+  transform: rotate(-135deg);
+  top: 14px;
+  right: -19px;
 }
 
 .breadcrumbs-item {
