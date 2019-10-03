@@ -1898,7 +1898,7 @@ li:last-child .sorting-direction-list-item {
 .footer {
   padding-left: 140px;
   padding-right: 140px;
-  padding-top: 62px;
+  padding-top: 63px;
 
   min-height: 323px;
 
@@ -2029,7 +2029,7 @@ li:nth-child(5) .footer-user-nav-item::before{
   width: 80px;
   height: 7px;
   background-color: #ffc600;
-  top: 109px;
+  top: 108px;
 }
 
 .footer-onpage-menu {
