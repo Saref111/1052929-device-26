@@ -2217,4 +2217,27 @@ li:nth-child(5) .footer-user-nav-item::before{
   font-size: 14px;
 }
 
+ /*MAP*/
 
+.map{
+  position: fixed;
+  width: 960px;
+  height: 560px;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  margin-left: -480px;
+  margin-top: -280px;
+  background-color: #ebeae9;
+  background-image: url("../img/map-big.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.map iframe{
+  margin: 0;
+  width: 960px;
+  height: 560px;
+}
