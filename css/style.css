@@ -45,10 +45,7 @@ html {
 
 body {
   margin: 0;
-  margin-left: auto;
-  margin-right: auto;
 
-  width: 1440px;
 
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -95,8 +92,9 @@ a {
 /*HEADER*/
 .index-header,
 .catalog-header {
-  margin-right: 140px;
-  margin-left: 140px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 56px;
   padding-left: 59px;
   padding-top: 22px;
@@ -483,8 +481,10 @@ input:focus~.search-button::before {
 .slider-top {
   min-height: 595px;
   position: relative;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
 }
 
 .slider-top::before{
@@ -846,9 +846,11 @@ input:focus~.search-button::before {
 /*Popular links*/
 
 .popular {
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 322px;
+  width: 1160px;
 
   font-family: "Gilroy", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -963,8 +965,6 @@ li:nth-child(6) .popular-menu-item::before{
 
 .slider-services {
   min-height: 388px;
-  padding-left: 140px;
-  padding-right: 140px;
 
   background: linear-gradient(#ffffff,
       #ffffff 99px,
@@ -973,6 +973,10 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .slider-services-container {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1160px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,8 +1118,10 @@ li:nth-child(6) .popular-menu-item::before{
 /*Logotypes*/
 
 .logotypes {
-  margin-left: 140px;
-  margin-right: 140px;
+  width: 1160px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 7px;
 }
 
@@ -1157,8 +1163,9 @@ li:nth-child(6) .popular-menu-item::before{
 /*Information*/
 
 .info {
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 87px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1896,8 +1903,7 @@ li:last-child .sorting-direction-list-item {
 /*Footer*/
 
 .footer {
-  padding-left: 140px;
-  padding-right: 140px;
+  margin: 0;
   padding-top: 63px;
 
   min-height: 323px;
@@ -1907,6 +1913,10 @@ li:last-child .sorting-direction-list-item {
 }
 
 .footer-top {
+  width: 1160px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2009,6 +2019,10 @@ li:nth-child(5) .footer-user-nav-item::before{
 }
 
 .footer-middle {
+  width: 1160px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2074,6 +2088,10 @@ li:nth-child(5) .footer-user-nav-item::before{
 }
 
 .footer-bottom {
+  width: 1160px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
