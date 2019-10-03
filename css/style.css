@@ -1410,7 +1410,6 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .price-range {
-  content: "";
   width: 200px;
   height: 2px;
   background: -webkit-gradient(linear, left top, right top, from(#91c92f), color-stop(60%, #91c92f), color-stop(60%, #dbdbdb), to(#dbdbdb));
@@ -1419,9 +1418,45 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .price-level {
-  content: "";
   width: 24px;
   height: 24px;
+  background-image: url("../img/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  cursor: pointer;
+}
+
+.price-bottom{
+  top: 48px;
+  left: -5px;
+}
+
+.price-bottom::after{
+  content:"от 0";
+  font-size: 14px;
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  opacity: 0.2;
+  top: 19px;
+  left: 4px;
+}
+
+.price-top{
+  top: 48px;
+  left: 107px;
+}
+
+.price-top::after{
+  content:"до 5000";
+  font-size: 14px;
+  position: absolute;
+  display: block;
+  white-space: nowrap;
+  opacity: 0.2;
+  top: 19px;
+  left: -17px;
 }
 
 .color {
@@ -1440,6 +1475,46 @@ li:nth-child(6) .popular-menu-item::before{
   margin-bottom: 10px;
 }
 
+.colors-label{
+  position: relative;
+}
+
+.colors-label::before{
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -2px;
+  left: -40px;
+}
+
+input[name="colors"]:checked ~ .colors-label::before{
+  width: 27px;
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 1;
+}
+
+.colors-label:hover::before,
+input[name="colors"]:focus ~ .colors-label::before{
+  opacity: 0.6;
+
+}
+
+input[name="colors"]:focus ~ .colors-label{
+  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.colors-label:active::before,
+input[name="colors"]:active ~ .colors-label::before{
+  opacity: 1;
+}
+
 .bluetooth {
   padding-top: 22px;
   margin-bottom: 42px;
@@ -1453,6 +1528,45 @@ li:nth-child(6) .popular-menu-item::before{
 
 .filters-bluetooth-list li:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.bluetooth-label{
+  position: relative;
+}
+
+.bluetooth-label::before{
+  content:"";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: -2px;
+  left: -40px;
+}
+
+input[name="bluetooth"]:checked ~ .bluetooth-label::before{
+  background-image: url("../img/radio-on.svg");
+  opacity: 1;
+}
+
+.bluetooth-label:hover::before,
+input[name="bluetooth"]:focus ~ .bluetooth-label::before{
+  opacity: 0.6;
+
+}
+
+input[name="bluetooth"]:focus ~ .bluetooth-label{
+  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.bluetooth-label:active::before,
+input[name="bluetooth"]:active ~ .bluetooth-label::before{
+  opacity: 1;
 }
 
 .filters .button-line {
@@ -1522,9 +1636,27 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .sorting-direction-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-top: 10px;
   list-style: none;
+  width: 42px;
+}
+
+.sorting-direction-list-item{
+  display: block;
+  width: 11px;
+  height: 10px;
+}
+
+li:first-child .sorting-direction-list-item {
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+li:last-child .sorting-direction-list-item {
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 .sorting-direction-list-item {
