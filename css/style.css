@@ -1276,8 +1276,12 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .heading-breadcrumbs-wrap {
-  margin-left: 200px;
+  width: 1160px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 45px;
+  padding-left: 60px;
 }
 
 .catalog-main-heading {
