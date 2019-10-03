@@ -57,7 +57,7 @@ body {
   color: #000000;
   letter-spacing: 0.1px;
 
-  background-image: url("../img/device-index.jpg");
+  background-image: url("../img/device-index-popup.png");
   opacity: 0.5;
   /*temporary, for markup*/
   background-repeat: no-repeat;
@@ -1974,8 +1974,116 @@ li:nth-child(5) .footer-user-nav-item::before{
 
 /*Popup Contact Us*/
 
+.contact-us{
+  position: fixed;
+  width: 960px;
+  min-height: 554px;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+
+  margin-left: -480px;
+  margin-top: -272px;
+  padding: 100px;
+  padding-top: 94px;
+  padding-bottom: 0px;
+
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-us-form{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-us-form-item{
+  margin: 0;
+  margin-bottom: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 360px;
+  min-height: 90px;
+}
+
+.contact-us-form-item:first-child{
+  margin-right: 40px;
+}
+
+.contact-us-form-item:nth-child(3){
+  width: 100%;
+  margin-bottom: 51px;
+}
+
+.contact-us-form-item label {
+  margin-bottom: 4px;
+  font-family: "Gilroy";
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contact-us .button-line{
+  padding-left: 34px;
+  padding-right: 30px;
+}
+
+.close {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  top: 22px;
+  right: 22px;
+  background-color: #f0c52e;
+  opacity: 0.6;
+}
+
+.close::before,
+.close::after{
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background-color: #ffffff;
+}
+
+.close::before{
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 13px;
+}
+
+.close::after{
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+}
+
+.close:hover,
+.close:focus{
+  opacity: 1;
+}
+
+.close:active{
+  opacity: 0.3;
+}
+
 .contact-us-form-item input,
 .contact-us-form-item textarea {
+  padding: 19px;
+  padding-top: 18px;
   border: none;
   background-color: #e5e5e5;
   opacity: 0.5;
@@ -2036,65 +2144,77 @@ li:nth-child(5) .footer-user-nav-item::before{
   color: rgba(70, 70, 70, 0.4);
 
   font-size: 14px;
+
+  letter-spacing: 0.4px;
 }
 
 .contact-us-form-item input:focus::-webkit-input-placeholder,
 .contact-us-form-item textarea:focus::-webkit-input-placeholder {
   color: rgba(70, 70, 70, 1);
+  font-size: 14px;
+
+  letter-spacing: 0.4px;
 }
 
 .contact-us-form-item input:focus::-moz-placeholder,
 .contact-us-form-item textarea:focus::-moz-placeholder {
   color: rgba(70, 70, 70, 1);
+  font-size: 14px;
+
+  letter-spacing: 0.4px;
 }
 
 .contact-us-form-item input:focus:-ms-input-placeholder,
 .contact-us-form-item textarea:focus:-ms-input-placeholder {
   color: rgba(70, 70, 70, 1);
+  font-size: 14px;
+
+  letter-spacing: 0.4px;
 }
 
 .contact-us-form-item input:focus::-ms-input-placeholder,
 .contact-us-form-item textarea:focus::-ms-input-placeholder {
   color: rgba(70, 70, 70, 1);
+  font-size: 14px;
+
+  letter-spacing: 0.4px;
 }
 
 .contact-us-form-item input:focus::placeholder,
 .contact-us-form-item textarea:focus::placeholder {
   color: rgba(70, 70, 70, 1);
+  font-size: 14px;
+  letter-spacing: 0.4px;
 }
 
 .contact-us-form-item input:invalid::-webkit-input-placeholder,
 .contact-us-form-item textarea:invalid::-webkit-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
+  font-size: 14px;
 }
 
 .contact-us-form-item input:invalid::-moz-placeholder,
 .contact-us-form-item textarea:invalid::-moz-placeholder {
   color: rgba(70, 70, 70, 0.4);
+  font-size: 14px;
 }
 
 .contact-us-form-item input:invalid:-ms-input-placeholder,
 .contact-us-form-item textarea:invalid:-ms-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
+  font-size: 14px;
 }
 
 .contact-us-form-item input:invalid::-ms-input-placeholder,
 .contact-us-form-item textarea:invalid::-ms-input-placeholder {
   color: rgba(70, 70, 70, 0.4);
+  font-size: 14px;
 }
 
 .contact-us-form-item input:invalid::placeholder,
 .contact-us-form-item textarea:invalid::placeholder {
   color: rgba(70, 70, 70, 0.4);
+  font-size: 14px;
 }
 
-.contact-us-form-item label {
-  font-family: "Gilroy";
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 700;
-}
 
-.contact-us-form button {
-  border: none;
-}
