@@ -2179,6 +2179,9 @@ li:nth-child(5) .footer-user-nav-item::before {
   opacity: 0.3;
 }
 
+
+
+
 /*Popup Contact Us*/
 
 .contact-us {
@@ -2189,6 +2192,7 @@ li:nth-child(5) .footer-user-nav-item::before {
   left: 50%;
   z-index: 15;
 
+  display: none;
   margin-left: -480px;
   margin-top: -272px;
   padding: 100px;
@@ -2433,6 +2437,8 @@ li:nth-child(5) .footer-user-nav-item::before {
   top: 50%;
   left: 50%;
   z-index: 15;
+
+  display: none;
   margin-left: -480px;
   margin-top: -280px;
   background-color: #ebeae9;
@@ -2448,3 +2454,58 @@ li:nth-child(5) .footer-user-nav-item::before {
   width: 960px;
   height: 560px;
 }
+
+/*MODAL CONDITIONS AND ANIMATIONS*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show{
+  display: block;
+  animation-name: bounce;
+  animation-duration: 0.6s;
+}
+
+.modal-error{
+  animation-name: shake;
+  animation-duration: 0.6s;
+}
+
+
