@@ -536,9 +536,9 @@ input:focus~.search-button::before {
     inset 0 0 0 5px #000000;
 }
 
-#slider-top-checkbox-1:checked~.labels label[for="slider-top-checkbox-1"],
-#slider-top-checkbox-2:checked~.labels label[for="slider-top-checkbox-2"],
-#slider-top-checkbox-3:checked~.labels label[for="slider-top-checkbox-3"] {
+#slider-top-checkbox-1:focus~.labels label[for="slider-top-checkbox-1"],
+#slider-top-checkbox-2:focus~.labels label[for="slider-top-checkbox-2"],
+#slider-top-checkbox-3:focus~.labels label[for="slider-top-checkbox-3"] {
   outline-color: rgb(77, 144, 254);
   outline-offset: -2px;
   outline-style: auto;
@@ -1868,10 +1868,34 @@ li:last-child .sorting-direction-list-item {
 .item-picture:focus~.item-hover,
 .item-hover:hover {
   top: 0;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .item-hover:focus-within {
   top: 0;
+}
+
+.new::after{
+  position: absolute;
+  content: "New";
+  top: 29px;
+  right: 27px;
+  padding-top: 16px;
+  padding-left: 4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  text-transform: uppercase;
+  font-family: "Gilroy", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  opacity: 0.2;
+  z-index: 1;
 }
 
 /*Pagination*/
