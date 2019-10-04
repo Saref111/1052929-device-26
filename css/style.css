@@ -40,12 +40,12 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-
 }
 
 body {
-  margin: 0;
-
+  margin: 0 auto;
+  max-width: 100vw;
+  overflow-x: hidden;
 
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 15px;
@@ -539,7 +539,7 @@ input:focus~.search-button::before {
 #slider-top-checkbox-1:checked~.labels label[for="slider-top-checkbox-1"],
 #slider-top-checkbox-2:checked~.labels label[for="slider-top-checkbox-2"],
 #slider-top-checkbox-3:checked~.labels label[for="slider-top-checkbox-3"] {
-  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-color: rgb(77, 144, 254);
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
@@ -953,6 +953,7 @@ li:nth-child(6) .popular-menu-item::before {
 /*Services slider*/
 
 .slider-services {
+  min-width: 1160px;
   min-height: 388px;
 
   background: linear-gradient(#ffffff,
@@ -1543,7 +1544,7 @@ input[name="colors"]:focus~.colors-label::before {
 }
 
 input[name="colors"]:focus~.colors-label {
-  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-color: rgb(77, 144, 254);
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
@@ -1597,7 +1598,7 @@ input[name="bluetooth"]:focus~.bluetooth-label::before {
 }
 
 input[name="bluetooth"]:focus~.bluetooth-label {
-  outline-color: rgb(77, 144, 254); // #4D90FE
+  outline-color: rgb(77, 144, 254);
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
@@ -1947,8 +1948,10 @@ li:last-child .sorting-direction-list-item {
 /*Footer*/
 
 .footer {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 63px;
+  min-width: 1160px;
+  overflow-x: hidden;
 
   min-height: 323px;
 
