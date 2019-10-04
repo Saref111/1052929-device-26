@@ -1020,7 +1020,9 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .labels-list-item label:active,
-.labels-list-item input:checked~label {
+#slider-services-checkbox-1:checked ~ .labels-list label[for="slider-services-checkbox-1"],
+#slider-services-checkbox-2:checked ~ .labels-list label[for="slider-services-checkbox-2"],
+#slider-services-checkbox-3:checked ~ .labels-list label[for="slider-services-checkbox-3"] {
   text-align: left;
   width: 280px;
   background: none;
@@ -1029,17 +1031,17 @@ li:nth-child(6) .popular-menu-item::before{
 }
 
 .labels-list-item:nth-child(1) label:active,
-.labels-list-item:nth-child(1) input:checked~label {
+#slider-services-checkbox-1:checked ~ .labels-list label[for="slider-services-checkbox-1"] {
   padding-left: 19px;
 }
 
 .labels-list-item:nth-child(2) label:active,
-.labels-list-item:nth-child(2) input:checked~label {
+#slider-services-checkbox-2:checked ~ .labels-list label[for="slider-services-checkbox-2"] {
   padding-left: 30px;
 }
 
 .labels-list-item:nth-child(3) label:active,
-.labels-list-item:nth-child(3) input:checked~label {
+#slider-services-checkbox-3:checked ~ .labels-list label[for="slider-services-checkbox-3"] {
   padding-left: 42px;
 }
 
@@ -1065,6 +1067,13 @@ li:nth-child(6) .popular-menu-item::before{
   padding-left: 121px;
   padding-top: 25px;
   position: absolute;
+  display: none;
+}
+
+#slider-services-checkbox-1:checked ~ .slider-services-wrap .services-slide:nth-child(1),
+#slider-services-checkbox-2:checked ~ .slider-services-wrap .services-slide:nth-child(2),
+#slider-services-checkbox-3:checked ~ .slider-services-wrap .services-slide:nth-child(3){
+  display: block;
 }
 
 .services-heading {
