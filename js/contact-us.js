@@ -47,7 +47,7 @@ contactUsCloseButton.addEventListener("click", function (evt) {
   contactUsOpenButton.focus();
 });
 
-contactUsForm.addEventListener("submit", function(evt) {
+contactUsForm.addEventListener("submit", function (evt) {
   if (!emailInput.value) {
     evt.preventDefault();
     contactUsPopup.classList.remove("modal-error");

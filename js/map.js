@@ -8,7 +8,7 @@ openMapButton.addEventListener("click", function (evt) {
   closeMapButton.focus();
 });
 
-closeMapButton.addEventListener("click", function(evt) {
+closeMapButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapWindow.classList.remove("modal-show");
   openMapButton.focus();
