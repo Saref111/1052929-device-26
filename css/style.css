@@ -526,9 +526,9 @@ input:focus~.search-button::before {
   box-shadow: inset 0 0 0 1px #000000;
 }
 
-.labels input:checked ~ label,
-.labels input:checked ~ label,
-.labels input:checked ~ label{
+#slider-top-checkbox-1:checked ~ .labels label[for="slider-top-checkbox-1"],
+#slider-top-checkbox-2:checked ~ .labels label[for="slider-top-checkbox-2"],
+#slider-top-checkbox-3:checked ~ .labels label[for="slider-top-checkbox-3"]{
   -webkit-box-shadow: inset 0 0 0 1px #000000,
               inset 0 0 0 4px #ffffff,
               inset 0 0 0 5px #000000;
@@ -537,13 +537,19 @@ input:focus~.search-button::before {
               inset 0 0 0 5px #000000;
 }
 
-.labels input:focus ~ label,
-.labels input:focus ~ label,
-.labels input:focus ~ label{
+#slider-top-checkbox-1:checked ~ .labels label[for="slider-top-checkbox-1"],
+#slider-top-checkbox-2:checked ~ .labels label[for="slider-top-checkbox-2"],
+#slider-top-checkbox-3:checked ~ .labels label[for="slider-top-checkbox-3"]{
   outline-color: rgb(77, 144, 254); // #4D90FE
   outline-offset: -2px;
   outline-style: auto;
   outline-width: 5px;
+}
+
+#slider-top-checkbox-1:checked ~ .slides-list .slide:nth-child(1),
+#slider-top-checkbox-2:checked ~ .slides-list .slide:nth-child(2),
+#slider-top-checkbox-3:checked ~ .slides-list .slide:nth-child(3){
+  z-index: 2;
 }
 
 .moto {
@@ -776,7 +782,6 @@ input:focus~.search-button::before {
 .slide:nth-child(3) {
   padding-top: 67px;
   padding-left: 30px;
-  z-index: 2;
 }
 
 .slide:nth-child(3) .img-wrap {
@@ -824,9 +829,6 @@ input:focus~.search-button::before {
   margin-right: 60px;
 }
 
-.show-slide {
-  z-index: 7;
-}
 /*SLIDER for IE*/
 
 
